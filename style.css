@@ -1,7 +1,10 @@
 content {
-  display: flex;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(8,10em);
+  /*display: flex;*/
   /*flex-direction: column;*/
-  flex-flow: column wrap;
+  /*flex-flow: column wrap;*/
   /*flex-wrap: wrap;*/
   font-family: 'Cabin', sans-serif;
 }
@@ -10,7 +13,9 @@ content {
   background-color: #3D5A80;
   color: #FFFFFF;
   display: flex;
-  height: 20vh;
+  /*height: 20vh;*/
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
 }
 
 .introduction-text {
@@ -40,6 +45,11 @@ h3 {
   font-size: .5em;
   height: 25%;
   margin-right: 3%;
+}
+
+figure {
+  grid-column: 1 / 3;
+  grid-row: 2 / 5;
 }
 
 .image {
@@ -73,16 +83,9 @@ h3 {
 .faq {
   background-color: #8D99AE;
   font-size: 0.5em;
-  width: 100%;
+  grid-column: 1 / 3;
+  grid-row: 5 / 6;
 }
-
-/*.content-container {
-  color: #FFFFFF;
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 0.5em;
-  text-align: center;
-}*/
 
 article {
   align-items: center;
@@ -91,16 +94,11 @@ article {
   flex-wrap: wrap;
   flex-direction: column;
   font-size: 0.5em;
-  height: 20vh;
   justify-content: center;
 }
 
 i {
   margin-bottom: .25em;
-}
-
-.learn-more-about {
-  width: 50%;
 }
 
 .union-organizing {
@@ -112,7 +110,8 @@ i {
 }
 
 .speeches {
-  background-color: #2B2D42;
+  background-color: #3D5A80;
+  /*#2B2D42;*/
 }
 
 .presidential-campaigns {
@@ -120,11 +119,14 @@ i {
 }
 
 .american-democratic-socialism {
-  background-color: #3D5A80;
+  background-color: #13293D;
+  grid-column: 2 / 3;
 }
 
 .prison-record {
-  background-color: #8D99AE;
+  background-color: #08415C;
+  grid-column: 1 / 2;
+  grid-row: 8 / 9;
 }
 
 @media only screen and (min-width: 768px) {
@@ -175,9 +177,11 @@ i {
 
   .faq {
     grid-column: 3 / 4;
+    grid-row: 1 / 2;
   }
 
-  .learn-more-about {
-    width: 100%;
-  }
+  .prison-record {
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+}
 }
