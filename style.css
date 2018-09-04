@@ -1,7 +1,8 @@
 content {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  /*flex-direction: column;*/
+  flex-flow: column wrap;
+  /*flex-wrap: wrap;*/
   font-family: 'Cabin', sans-serif;
 }
 
@@ -17,6 +18,10 @@ content {
   flex-wrap: wrap;
   margin-top: 7%;
   margin-left: 5%;
+}
+
+h1 {
+  width: 100%;
 }
 
 h2, h3 {
@@ -65,13 +70,19 @@ h3 {
   width: 96%;
 }
 
-.content-container {
+.faq {
+  background-color: #8D99AE;
+  font-size: 0.5em;
+  width: 100%;
+}
+
+/*.content-container {
   color: #FFFFFF;
   display: flex;
   flex-wrap: wrap;
   font-size: 0.5em;
   text-align: center;
-}
+}*/
 
 article {
   align-items: center;
@@ -79,17 +90,13 @@ article {
   color: #FFFFFF;
   flex-wrap: wrap;
   flex-direction: column;
+  font-size: 0.5em;
   height: 20vh;
   justify-content: center;
 }
 
 i {
   margin-bottom: .25em;
-}
-
-.faq {
-  background-color: #8D99AE;
-  width: 100%;
 }
 
 .learn-more-about {
@@ -125,24 +132,52 @@ i {
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
     grid-template-rows: 33vh 33vh 33vh;
-  }
-}
-  
-@media only screen and (min-width: 768px) { 
+  } 
+
   .introduction {
     grid-column: 1 / 3;
     grid-row: 1 / 2;
+    height: auto;
   }
-} 
-  
-@media only screen and (min-width: 768px) {
+
+  h2, h3 {
+    font-weight: lighter;
+  }
+
+  .button {
+    height: 27%;
+    width: 25%;
+  }
+
+  figure {
+    grid-column: 4 / 6;
+    grid-row: 1 / 4;
+  }
+
+  .image {
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .circle-parent-container { 
+     width: 39.5%;
+  }
+
+  .arrow-parent-container {
+    margin: 0 1%;
+    width: 38%;
+  }
+
+  article {
+    height: auto;
+  }
+
   .faq {
     grid-column: 3 / 4;
   }
-}
- 
-@media only screen and (min-width: 768px) {
-  .image {
-    grid-column: 4 / 6;
+
+  .learn-more-about {
+    width: 100%;
   }
 }
