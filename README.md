@@ -27,4 +27,4 @@ You may NOT take liberties with the layout, but your creative license includes:
 
 # My Version:
 
-(to be continued...)
+![alt text](mw-comp-challenge-1.png)
