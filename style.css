@@ -1,19 +1,16 @@
 content {
   display: grid;
+  font-family: 'Arvo', serif;
+  font-family: 'Fredericka the Great', cursive;
   grid-template-columns: 50% 50%;
   grid-template-rows: repeat(8,10em);
-  /*display: flex;*/
-  /*flex-direction: column;*/
-  /*flex-flow: column wrap;*/
-  /*flex-wrap: wrap;*/
-  font-family: 'Cabin', sans-serif;
+  
 }
 
 .introduction {
   background-color: #3D5A80;
   color: #FFFFFF;
   display: flex;
-  /*height: 20vh;*/
   grid-column: 1 / 3;
   grid-row: 1 / 2;
 }
@@ -21,20 +18,24 @@ content {
 .introduction-text {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 7%;
   margin-left: 5%;
+  margin-top: 5.5%; 
 }
 
 h1 {
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 1.25em;
+  font-weight: 700;
+  letter-spacing: .25em;  
   width: 100%;
 }
 
-h2, h3 {
+h2 {
+  font-family: 'Arvo', serif;
   font-size: .75em;
-  line-height: .5em;;
-}
-
-h3 {
+  font-weight: 400;
+  letter-spacing: .1em;
+  line-height: 1.2em;
   width: 100%;
 }
 
@@ -42,9 +43,11 @@ h3 {
   background-color: #3D5A80;
   border: 1px solid #FFFFFF;
   color: #FFFFFF;
-  font-size: .5em;
-  height: 25%;
+  cursor: pointer;
+  font-size: .6em;
+  height: 4em;
   margin-right: 3%;
+  width: 9.5em;  
 }
 
 figure {
@@ -76,7 +79,7 @@ figure {
   justify-content: space-between;
   margin: 0 2%;
   position: absolute;
-  top: 50%;
+  top: 53.5%;
   width: 96%;
 }
 
@@ -89,16 +92,24 @@ figure {
 
 article {
   align-items: center;
-  display: flex;
   color: #FFFFFF;
+  display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  font-family: 'Arvo', serif;
   font-size: 0.5em;
   justify-content: center;
+  letter-spacing: .15em;
+  text-align: center; 
 }
 
 i {
+  cursor: pointer;
   margin-bottom: .25em;
+}
+
+p {
+  cursor: pointer;
 }
 
 .union-organizing {
@@ -111,7 +122,6 @@ i {
 
 .speeches {
   background-color: #3D5A80;
-  /*#2B2D42;*/
 }
 
 .presidential-campaigns {
@@ -142,13 +152,15 @@ i {
     height: auto;
   }
 
-  h2, h3 {
-    font-weight: lighter;
+  h2 {
+    font-weight: 400;
   }
 
   .button {
-    height: 27%;
-    width: 25%;
+    font-size: .25em;
+    height: 3.2em;
+    margin-bottom: 6%;
+    width: 8.5em;
   }
 
   figure {
@@ -163,11 +175,12 @@ i {
   }
 
   .circle-parent-container { 
-     width: 39.5%;
+    width: 39.5%;
   }
 
   .arrow-parent-container {
     margin: 0 1%;
+    top: 50%;
     width: 38%;
   }
 
@@ -181,7 +194,7 @@ i {
   }
 
   .prison-record {
-  grid-column: 3 / 4;
-  grid-row: 3 / 4;
-}
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+  }
 }
